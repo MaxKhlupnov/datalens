@@ -1,3 +1,6 @@
 [submodule "datalens-ui"]
 	path = datalens-ui
 	url = https://github.com/datalens-tech/datalens-ui
+[submodule "datalens"]
+	path = datalens
+	url = https://github.com/datalens-tech/datalens

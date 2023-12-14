@@ -1,0 +1,66 @@
+version: "3.7"
+
+services:
+  datalens-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datalens-ui
+    ports:
+      - 8080:80
+    depends_on:
+      - us
+      - control-api
+      - data-api
+      - pg-demo-connection
+    healthcheck:
+      test: curl --fail http://localhost:80 || exit 1
+      interval: 5s
+      retries: 10
+      start_period: 5s
+      timeout: 10s
+    environment:
+      APP_MODE: "full"
+      APP_ENV: "production"
+      APP_INSTALLATION: "opensource"
+      AUTH_POLICY: "disabled"
+      HC: ${HC:-0}
+
+  pg-compeng:
+    extends:
+      file: ./datalens/docker-compose.yml
+      service: pg-compeng
+
+  control-api:
+    extends:
+      file: ./datalens/docker-compose.yml
+      service: control-api
+    depends_on:
+      - us
+
+  data-api:
+    extends:
+      file: ./datalens/docker-compose.yml
+      service: data-api
+    depends_on:
+      - us
+      - pg-compeng
+
+  pg-us:
+    extends:
+      file: ./datalens/docker-compose.yml
+      service: pg-us
+
+  pg-demo-connection:
+    ports:
+      - 5555:5432
+    extends:
+      file: ./datalens/docker-compose.yml
+      service: pg-demo-connection
+
+  us:
+    extends:
+      file: ./datalens/docker-compose.yml
+      service: us
+    depends_on:
+      - pg-us

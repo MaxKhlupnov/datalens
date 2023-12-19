@@ -1,4 +1,4 @@
-# DataLens - изменениt лого, стиля и работы с heigharts в offline (без интернет)
+# DataLens - изменениt лого, стиля и работы с highcharts в offline (без интернет)
 
 ## Загрузить исходный код вместе с модулями DataLens
 

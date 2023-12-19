@@ -6,6 +6,12 @@
 git clone https://github.com/MaxKhlupnov/datalens --recurse-submodules
 ```
 
-## Замените файлы логотипов и иконок на Ваши 
-  [Логотип- замените svg файл в ветке](https://github.com/MaxKhlupnov/datalens/blob/main/patch/src/ui/assets/icons/logo.svg)
+## Замените файлы логотипов и иконок
+  ([Логотип- замените svg файл в ветке] (https://github.com/MaxKhlupnov/datalens/blob/main/patch/src/ui/assets/icons/logo.svg)
+  ([Иконка - замените svg файл в ветке])https://github.com/MaxKhlupnov/datalens/blob/main/patch/dist/public/favicon.ico)
+
+## Запустите сборку проекта (нужно перейти в папку проекта)
+```sh
+  docker-compose build
+```
 

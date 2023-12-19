@@ -10,7 +10,7 @@ git clone https://github.com/MaxKhlupnov/datalens --recurse-submodules
   [Логотип- замените svg файл в ветке] (https://github.com/MaxKhlupnov/datalens/blob/main/patch/src/ui/assets/icons/logo.svg)
   [Иконка - замените svg файл в ветке] (https://github.com/MaxKhlupnov/datalens/blob/main/patch/dist/public/favicon.ico)
 
-## Запустите сборку проекта (нужно перейти в папку проекта)
+## Запустите сборку проекта (предварительно нужно перейти в папку проекта)
 ```sh
   docker-compose build
 ```

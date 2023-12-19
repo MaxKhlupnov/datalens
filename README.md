@@ -6,6 +6,6 @@
 git clone https://github.com/MaxKhlupnov/datalens --recurse-submodules
 ```
 
-## To customize icon
-Replace svg file at  tree/main/patch/src/ui/assets/icons
+## Замените файлы логотипов и иконок на Ваши 
+  [Логотип- замените svg файл в ветке](https://github.com/MaxKhlupnov/datalens/blob/main/patch/src/ui/assets/icons/logo.svg)
 

@@ -1,4 +1,4 @@
-# DataLens пример изменения лого, стиля и работы с heigharts в offline
+# DataLens - изменениt лого, стиля и работы с heigharts в offline (без интернет)
 
 ## Загрузить исходный код вместе с модулями DataLens
 

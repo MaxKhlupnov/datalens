@@ -15,3 +15,8 @@ git clone https://github.com/MaxKhlupnov/datalens --recurse-submodules
   docker-compose build
 ```
 
+## Запустите Datalens с обновленным контейнером UI
+```sh
+  docker-compose up -d
+```
+

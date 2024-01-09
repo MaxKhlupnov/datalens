@@ -11,6 +11,8 @@ git clone https://github.com/MaxKhlupnov/datalens --recurse-submodules
   [Иконка - замените svg файл в ветке] (https://github.com/MaxKhlupnov/datalens/blob/main/patch/dist/public/favicon.ico)
 
 ## Запустите сборку проекта (предварительно нужно перейти в папку проекта)
+Собирать нужно под ОС Linux, для  Windows используйте WSS.
+Собранный под Windows контейнер с UI не стартует - какая-то проблема с правами (идет от основного DL).
 ```sh
   docker-compose build
 ```
